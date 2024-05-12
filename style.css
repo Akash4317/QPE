@@ -490,7 +490,7 @@ nav hr {
 
 .fresh_text {
     margin-top: 35px;
-    padding: 0px 24px;
+    padding: 24px 24px;
     text-align: center;
 }
 
@@ -558,7 +558,7 @@ nav hr {
 
 .season_div {
     text-align: center;
-    /* padding: 48px; */
+    padding: 48px;
     font-size: 3.5vw;
     letter-spacing: 2px;
     font-weight: 500;

@@ -1,3 +1,4 @@
+// For Announcement Animation Component
 let texts = [
     "Free 7 days return and exchange policy",
     "Baccha buccio -B pro",
@@ -19,19 +20,7 @@ function changeText(direction) {
 }
 
 
-function toggleMenu() {
-    var lowerNav = document.getElementById("lower_nav");
-    if (lowerNav.style.left === "-250px") {
-        lowerNav.style.left = "0";
-    } else {
-        lowerNav.style.left = "-250px";
-    }
-}
-
-
-
-
-
+// quantity changing logic for featured product
 document.addEventListener('DOMContentLoaded', function() {
     const decreaseBtn = document.querySelector('.decrease-btn');
     const increaseBtn = document.querySelector('.increase-btn');
@@ -50,16 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// for changing the list item in collection section
 function toggleUnderline(element) {
-    // Remove underline from all elements
     let allElements = document.querySelectorAll('.explore_tag p');
     allElements.forEach(el => {
         el.classList.remove('active');
     });
-
-    // Add underline to the clicked element
     element.classList.add('active');
 }
+
+//to show the prev footer as a carousel section
 
 let customCurrentSlideIndex = 0;
 const customCarouselItems = document.querySelectorAll('.custom-carousel-item');
@@ -81,4 +70,4 @@ function customCurrentSlide(n) {
     customShowSlide(customCurrentSlideIndex = n);
 }
 
-customShowSlide(customCurrentSlideIndex); // Initialize the carousel display
+customShowSlide(customCurrentSlideIndex);
