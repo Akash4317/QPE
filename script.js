@@ -20,6 +20,7 @@ function changeText(direction) {
 }
 
 
+
 // quantity changing logic for featured product
 document.addEventListener('DOMContentLoaded', function() {
     const decreaseBtn = document.querySelector('.decrease-btn');
@@ -71,3 +72,23 @@ function customCurrentSlide(n) {
 }
 
 customShowSlide(customCurrentSlideIndex);
+
+
+var placeholderTexts = [
+    `Search "Find your favorite items"`,
+    `Search "Search for trendy styles"`,
+    `Search "Discover new arrivals"`,
+    `Search "Explore our catalog"`,
+    `Search "Looking for something specific?"`,
+
+];
+
+var searchInput = document.getElementById("searchInput");
+
+function updatePlaceholder() {
+    var randomIndex = Math.floor(Math.random() * placeholderTexts.length);
+    searchInput.placeholder = placeholderTexts[randomIndex];
+}
+
+updatePlaceholder();
+setInterval(updatePlaceholder, 2000);
