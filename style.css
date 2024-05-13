@@ -439,7 +439,7 @@ nav hr {
 }
 
 .card-text~p {
-    color: #ccae1b;
+    color: var(--primary-bg-color);
 }
 
 .card-body>p>span {
@@ -476,6 +476,37 @@ nav hr {
 
 .discount-b p {
     font-size: small;
+}
+
+@media only screen and (max-width: 767px) {
+    .cards-b {
+        flex-direction: column;
+        align-items: center;
+    }
+    #card-b {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cards-b {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #card-b {
+        width: 45%;
+        margin: 0 10px 20px 10px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .cards-b {
+        justify-content: space-around;
+    }
+    #card-b {
+        width: 20%;
+    }
 }
 
 
